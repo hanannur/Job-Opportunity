@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import api from '../api';
+import loginHeroImg from '../assets/login-illustration.png';
 
 function Logo() {
     return (
@@ -33,42 +34,7 @@ export default function LoginPage() {
         <div className="auth-page">
             {/* Illustration Side */}
             <div className="auth-illustration">
-                <svg viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Background briefcases grid */}
-                    {[
-                        [40, 30], [120, 30], [200, 30], [280, 30], [360, 30],
-                        [40, 110], [120, 110], [200, 110], [280, 110], [360, 110],
-                        [40, 190], [120, 190], [200, 190], [280, 190], [360, 190],
-                    ].map(([x, y], i) => (
-                        <g key={i} transform={`translate(${x},${y})`} opacity="0.25">
-                            <rect width="55" height="42" rx="7" fill="#3B5BDB" />
-                            <rect x="18" y="-5" width="19" height="10" rx="3" fill="#3B5BDB" />
-                        </g>
-                    ))}
-
-                    {/* Search circle */}
-                    <circle cx="200" cy="160" r="95" fill="#2B4BFF" opacity="0.12" />
-                    <circle cx="200" cy="160" r="95" stroke="#2B4BFF" strokeWidth="6" fill="none" />
-
-                    {/* Big briefcase in circle */}
-                    <rect x="152" y="120" width="96" height="78" rx="12" fill="#2B4BFF" />
-                    <rect x="170" y="110" width="60" height="18" rx="6" fill="#2B4BFF" />
-                    <rect x="170" y="110" width="60" height="18" rx="6" stroke="#1A3CFF" strokeWidth="2" fill="#3B5BDB" />
-                    <line x1="152" y1="158" x2="248" y2="158" stroke="white" strokeOpacity="0.3" strokeWidth="2" />
-                    <rect x="188" y="154" width="24" height="8" rx="4" fill="white" fillOpacity="0.5" />
-
-                    {/* Magnifier */}
-                    <circle cx="248" cy="220" r="40" stroke="#2B4BFF" strokeWidth="8" fill="white" fillOpacity="0.9" />
-                    <line x1="276" y1="246" x2="306" y2="278" stroke="#2B4BFF" strokeWidth="10" strokeLinecap="round" />
-
-                    {/* Person */}
-                    <circle cx="280" cy="140" r="22" fill="#FBBF24" />
-                    <rect x="258" y="158" width="44" height="52" rx="12" fill="#2B4BFF" />
-                    <rect x="244" y="162" width="18" height="38" rx="9" fill="#2B4BFF" />
-                    <rect x="298" y="162" width="18" height="38" rx="9" fill="#2B4BFF" />
-                    <rect x="262" y="208" width="14" height="42" rx="7" fill="#2B4BFF" />
-                    <rect x="284" y="208" width="14" height="42" rx="7" fill="#2B4BFF" />
-                </svg>
+                <img src={loginHeroImg} alt="Login Illustration" style={{ width: '100%', maxWidth: '400px', display: 'block' }} />
             </div>
 
             {/* Form Side */}

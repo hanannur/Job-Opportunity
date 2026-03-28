@@ -1,18 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../assets/image.png';
 
 export default function Navbar() {
     const navigate = useNavigate();
 
     return (
         <nav className="navbar">
-            <svg width="0" height="0" style={{ position: 'absolute' }}>
-                <filter id="logo-blue-filter">
-                    <feColorMatrix type="matrix" values="0.898 0 0 0 0.102  0 0.765 0 0 0.235  0 0 0 0 1  0 0 0 1 0" />
-                </filter>
-            </svg>
-            <Link to="/" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
-                <img src={logo} alt="JOBSPHEERE" style={{ height: '40px', width: 'auto', display: 'block', filter: 'url(#logo-blue-filter)' }} />
+            <Link to="/" className="navbar-logo" style={{ textDecoration: 'none' }}>
+                <span className="jo">JO</span><span className="b-box">B</span><span className="spheere">SPHEERE</span>
             </Link>
 
             <ul className="navbar-links">
