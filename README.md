@@ -74,5 +74,17 @@ npm run dev
 ### 4. Open the Application
 Navigate to `http://localhost:5173` in your browser. The backend API is configured to run on `http://localhost:5000`.
 
-## License
-MIT License
+###5. Screenshot
+
+Home Page
+<img width="1919" height="999" alt="image" src="https://github.com/user-attachments/assets/4db13b8d-d8b4-479c-9146-70123f8576e4" />
+<img width="1919" height="893" alt="image" src="https://github.com/user-attachments/assets/0e6fa98e-d2e6-46d8-9efb-f8a4716a3572" />
+
+Login Page
+<img width="1899" height="1026" alt="image" src="https://github.com/user-attachments/assets/f19cd82b-8a78-488b-b488-9138afd14b50" />
+
+SignUp
+<img width="1760" height="958" alt="image" src="https://github.com/user-attachments/assets/963040e3-e4d2-4d4e-b3b8-5dc27ed918f5" />
+
+
+
